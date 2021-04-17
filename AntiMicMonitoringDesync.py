@@ -1,5 +1,4 @@
 import obspython as obs
-import time
 
 ######## Global Variables ########
 source_name = ""
@@ -17,7 +16,6 @@ default_update_interval = 60
 def reset_monitoring():
   global source_name
   source = obs.obs_get_source_by_name(source_name)
-  print(source_name)
   if source:
     obs.obs_source_set_monitoring_type(source, obs.OBS_MONITORING_TYPE_NONE)
     print("Monitoring disabled")

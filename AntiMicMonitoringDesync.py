@@ -3,7 +3,7 @@ import obspython as obs
 ######## Global Variables ########
 source_name = ""
 update_interval = 60
-mic_type = "wasapi_input_capture"
+mic_types = ["wasapi_input_capture", "alsa_input_capture", "pulse_input_capture"]
 
 ######## Config Variables ########
 min_slider_value = 1
@@ -52,7 +52,7 @@ def script_properties():
   if sources:
     for source in sources:
       source_id = obs.obs_source_get_id(source)
-      if source_id == mic_type:
+      if source_id in mic_types:
         name = obs.obs_source_get_name(source)
         obs.obs_property_list_add_string(p, name, name)
   obs.source_list_release(sources)

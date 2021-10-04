@@ -16,6 +16,8 @@ To use this script you need to have Python installed on your machine, on the ver
 On OBS, find the script panel on Tools->Scripts, click on the `+` button to add a script, and select the script file you downloaded / cloned from github.
 On the right side you can select which input device you want to sync, and how often the sync should be done.
 
+![OBS Script Panel](https://github.com/MechanicallyDev/OBS-Anti-Mic-Monitoring-Desync/blob/702686b032313de596f1033ca23b11812604900f/script%20panel.png)
+
 
 ## Contributing
 

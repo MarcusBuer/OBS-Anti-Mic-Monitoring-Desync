@@ -7,23 +7,25 @@ If your OBS audio monitoring gets delayed over time, this script may mitigate th
 
 ## Installation
 
-You can either download the `AntiMicMonitoringDesync.py` file directly from github, or clone this project using git clone using the command `git clone https://github.com/MechanicallyDev/OBS-Anti-Mic-Monitoring-Desync.git`.
+You can either download the `AntiMicMonitoringDesync.py` file directly from github, or clone this project using the command `git clone https://github.com/MechanicallyDev/OBS-Anti-Mic-Monitoring-Desync.git`.
 
 To use this script you need to have Python installed on your machine, on the version 3.6 (due to OBS scripting module compatibility) and configure your OBS to locate the Python folder (Tools->Scripts->Python settings).
 
 
 ## Usage
 
-On OBS, find the script panel on Tools->Scripts, click on the `+` button to add a script, and select the script file you downloaded / cloned from github.
+On OBS, open the scripts panel on Tools->Scripts, click on the `+` button to add a script, and select the script file you downloaded / cloned from github.
 
-On the right side you can select which input device you want to sync, and how often the sync should be done.
+On the right side you can select which input device you want to automatically re-sync, and how often the sync should be done.
 
 ![OBS Script Panel](https://github.com/MechanicallyDev/OBS-Anti-Mic-Monitoring-Desync/blob/702686b032313de596f1033ca23b11812604900f/script%20panel.png)
 
 
 ## Contributing
 
-Contributions are always welcome! If you have any sugestion or issue, please leave an [issue](https://github.com/MechanicallyDev/OBS-Anti-Mic-Monitoring-Desync/issues).
+Contributions are always welcome! 
+
+If you have any sugestion or issue, please leave an [issue](https://github.com/MechanicallyDev/OBS-Anti-Mic-Monitoring-Desync/issues).
 
 
 ## FAQ
@@ -33,6 +35,13 @@ Contributions are always welcome! If you have any sugestion or issue, please lea
 This script disables and immediately re-enables a choosen audio input device in a set interval (default: every minute).
 
 This makes the buffer buildup disapear, forcing OBS to generate a more reasonable buffer, decreasing latency.
+
+
+#### Does it work on Windows / Linux?
+
+Currently this script is working on Windows and Linux (ALSA and Pulse Audio).
+
+If you are using Linux with another audio engine/API, or MacOS, please open an [issue](https://github.com/MechanicallyDev/OBS-Anti-Mic-Monitoring-Desync/issues) and include your OBS logs (Help menu > Log Files > Upload Current/Last Log File), so I can locate the proper prefix for the audio API and add to the list.
 
 
 #### Can I use this script with more than one input at the same time?

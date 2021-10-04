@@ -19,7 +19,7 @@ On the right side you can select which input device you want to sync, and how of
 
 ## Contributing
 
-Contributions are always welcome! If you have any sugestion or issue, please leave an (issue)[https://github.com/MechanicallyDev/OBS-Anti-Mic-Monitoring-Desync/issues].
+Contributions are always welcome! If you have any sugestion or issue, please leave an [issue](https://github.com/MechanicallyDev/OBS-Anti-Mic-Monitoring-Desync/issues).
 
 
 ## FAQ

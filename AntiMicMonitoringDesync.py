@@ -22,7 +22,7 @@ def reset_monitoring():
     obs.obs_source_set_monitoring_type(source, obs.OBS_MONITORING_TYPE_MONITOR_AND_OUTPUT)
     print("Monitoring enabled")
   else:
-    print("Monitoring device not found with the name {source_name}.")
+    print(f"Monitoring device not found with the name {source_name}.")
 
 ######## Main OBS functions ########
 
@@ -52,6 +52,7 @@ def script_properties():
   if sources:
     for source in sources:
       source_id = obs.obs_source_get_id(source)
+      print(f"Device type found: {source_id}.")
       if source_id in mic_types:
         name = obs.obs_source_get_name(source)
         obs.obs_property_list_add_string(p, name, name)

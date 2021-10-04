@@ -1,6 +1,7 @@
 # OBS Anti Mic-Monitoring Desync
 
 This OBS Script is a workaround on issues of audio monitoring desync that can happen due to buffer drift, usually caused by high CPU usage, like when loading a game.
+
 If your OBS audio monitoring gets delayed over time, this script may mitigate the issue.
 
 

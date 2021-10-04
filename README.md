@@ -1,15 +1,15 @@
 # OBS Anti Mic-Monitoring Desync
 
-This OBS Script is a workaround on issues of audio monitoring desync that can happen due to buffer drift, usually caused by high CPU usage, like when loading a game.
+This OBS Script is a workaround on issues of audio monitoring desync that can happen due to buffer drift, usually caused by high CPU usage.
 
-If your OBS audio monitoring gets delayed over time, this script may mitigate the issue.
+If your OBS audio monitoring gets delayed over time, this script might mitigate the issue.
 
 
 ## Installation
 
 You can either download the `AntiMicMonitoringDesync.py` file directly from github, or clone this project using the command `git clone https://github.com/MechanicallyDev/OBS-Anti-Mic-Monitoring-Desync.git`.
 
-To use this script you need to have Python installed on your machine, on the version 3.6 (due to OBS scripting module compatibility) and configure your OBS to locate the Python folder (Tools->Scripts->Python settings).
+To use this script you need to have Python installed on your machine, on the version 3.6 (due to OBS scripting module compatibility) and configure your OBS to locate the Python folder (OBS => Tools->Scripts->Python settings).
 
 
 ## Usage
@@ -41,7 +41,7 @@ This makes the buffer buildup disapear, forcing OBS to generate a more reasonabl
 
 Currently this script is working on Windows and Linux (ALSA and Pulse Audio).
 
-If you are using Linux with another audio engine/API, or MacOS, please open an [issue](https://github.com/MechanicallyDev/OBS-Anti-Mic-Monitoring-Desync/issues) and include your OBS logs (Help menu > Log Files > Upload Current/Last Log File), so I can locate the proper prefix for the audio API and add to the list.
+If you are using Linux with another audio engine/API, or MacOS, please load the script and open an [issue](https://github.com/MechanicallyDev/OBS-Anti-Mic-Monitoring-Desync/issues), including your OBS log (Help menu > Log Files > Upload Current/Last Log File), so I can locate within the log the proper prefix for the audio API and add to the list.
 
 
 #### Can I use this script with more than one input at the same time?

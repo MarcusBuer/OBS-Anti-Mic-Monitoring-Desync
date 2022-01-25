@@ -39,14 +39,14 @@ This makes the buffer buildup disapear, forcing OBS to generate a more reasonabl
 
 #### Does it work on Windows / Linux?
 
-Currently this script is working on Windows and Linux (ALSA and Pulse Audio).
+Yes, the script is using the OBS API to get all sources that are inputs (including both audio and video), independently of platform.
 
-If you are using Linux with another audio engine/API, or MacOS, please load the script and open an [issue](https://github.com/MechanicallyDev/OBS-Anti-Mic-Monitoring-Desync/issues), including your OBS log (Help menu > Log Files > Upload Current/Last Log File), so I can locate within the log the proper prefix for the audio API and add to the list.
+If for some reason OBS does not show any sources, please load the script and open an [issue](https://github.com/MechanicallyDev/OBS-Anti-Mic-Monitoring-Desync/issues), including your OBS log (Help menu > Log Files > Upload Current/Last Log File).
 
 
 #### Can I use this script with more than one input at the same time?
 
-Yes, just copy and paste the `AntiMicMonitoringDesync.py` file several times on the folder, and add several instances on OBS. Each instance can control one audio input.
+Yes, just copy and paste the `AntiMicMonitoringDesync.py` file several times on a folder, and add several instances of the script on OBS (one for each file). Each instance can control one audio input.
 
 
 #### Will I notice when the script runs?
@@ -56,4 +56,4 @@ It is possible in some instances to notice the monitoring disabling and re-enabl
 
 #### Will my viewers be able to notice the effect of this script?
 
-No, this script only works on the monitoring side of OBS, the audio continues to be send to your viewers even while your monitoring is off, so it doesn't affect the audio currenly being recorded or streamed.
+No, this script only works on the monitoring side of OBS, the audio continues to be sent to your viewers even while your monitoring is off, so it doesn't affect the audio currenly being recorded or streamed.
